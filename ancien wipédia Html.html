@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function clickCounter() {
+  if (typeof(Storage) !== "undefined") {
+    if (localStorage.clickcount) {
+      localStorage.clickcount = Number(localStorage.clickcount)+1 ;
+    } else {
+      localStorage.clickcount = 1;
+    }
+    document.getElementById("result").innerHTML = "tu a cliqués " + localStorage.clickcount + " fois.";
+  } else {
+    document.getElementById("result").innerHTML = "Sorry, your browser does not support web storage...";
+  }
+}
+</script>
+<style>
+body {
+  background-color: beige;
+}
+button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+myHeader {
+  background-color: lightblue;
+  color: black;
+  padding: 40px;
+  text-align: center;
+} 
+table, th, td {
+  border:1px solid black;
+}
+a {
+  text-decoration: none;
+}
+img.one {
+  border-radius: 40px;
+}
+p {
+  color: black;
+} 
+p.one {
+  color: red;
+} 
+div.one {
+  border: 5px solid black;
+  background-color: wheat;
+  width: 600px;
+  padding: 25px;
+  margin: 0px;
+  text-align: center;
+  color: black;
+}
+div.two {
+  border: 1px solid black;
+  background-color: beige;
+  width: 150px;
+  padding: 10px;
+  margin: 0px;
+  text-align: center;
+  color: black;
+}
+h4 {
+  border-style: solid;
+  border-width: medium;
+  text-align: center;
+  color: green;
+}
+h1.one {
+  border-style: double;
+  border-width: thick;
+}
+a:link {
+  color: black;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:visited {
+  color: black;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:hover {
+  color: red;
+  background-color: transparent;
+  text-decoration: underline;
+}
+a:active {
+  color: yellow;
+  background-color: transparent;
+  text-decoration: underline;
+}
+</style>
+<title>Le HTML par sacha GUITTER</title>
+</head>
+<body>	
+<center>
+<h1 class="one" style="background-color:rgb(6, 98, 203);" id="C20">Le language HTML, c'est quoi ?</h1>
+</center>
+<hr>
+<center>
+<img class="one" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.dnwevgAyTd5p9Eq9UplIlQHaEK%26pid%3DApi&f=1&ipt=b7f4f5335fad94071f39991cefbd13c077c9ed6d42cee109abf3e4d8928e86e3&ipo=images" alt="W3Schools.com" width="307	" height="166">	
+</center>
+<center>
+<div class="one"> HTML <br>
+<br>	
+HyperText Markup Language </div>
+</center>
+<hr>
+<h4> Sommaire </h4>
+<table style="width:100%">
+  <tr>
+   <th> <button class="button"><a href="#C1">Généralités</a></button>
+   <th> <button class="button"><a href="#C2">dénominations</a></button>
+   <th> <button class="button"><a href="#C3">évolution du langages</a></button>
+   <th> <button class="button"><a href="#C4">1989-1992: origines</a></button>
+   <th> <button class="button"><a href="#C5">1993: apport de NCSA Mosaic</a></buttoCSSn>
+  </tr>
+  <tr>
+   <th> <button class="button"><a href="#C6">1994: apports de Netscape Navigator</a></button>
+   <th> <button class="button"><a href="#C7">1995-1996 : HTML 2.0</a></button>
+   <th> <button class="button"><a href="#C8">1997 : HTML 3.2 et 4.0</a></button>
+   <th> <button class="button"><a href="#C9">2000-2006 : XHTML</a></button>
+   <th> <button class="button"><a href="#C10">De 2007 à nos jours : HTML 5 et abandon du XHTML2</a></button>
+  </tr>
+  <tr>
+   <th> <button class="button"><a href="#C11">Avenir du HTML</a></button>
+   <th> <button class="button"><a href="#C12">Syntaxe du HTML</a></button>
+   <th> <button class="button"><a href="#C13">Structure des documents HTML</a></button>
+   <th> <button class="button"><a href="#C14">Eléments de HTML </a></button>
+   <th> <button class="button"><a href="#C15">Attributs du HTML</a></buttoCSSn>
+  </tr>
+  <tr>
+  <th> <button class="button"><a href="#C16">Jeux de caractères</a></buttoCSSn>
+  <th> <button class="button">  <a href="#C17">Techniques d'échapements</a></buttoCSSn>
+   <th> <button class="button"><a href="#C18">Interprobabilité du HTML</a></buttoCSSn>
+  </tr>
+</table>
+<hr>
+
+<h4 id="C1">Généralités</h4>
+<p> Le HyperText Markup Language, généralement abrégé HTML ou, dans sa dernière version, HTML5, est le langage de balisage conçu pour représenter les pages web.<br>
+<br>
+Ce langage permet d’écrire de l’hypertexte (d’où son nom), de structurer sémantiquement une page web, de mettre en forme du contenu, de créer des formulaires de saisie ou encore d’inclure des ressources multimédias dont des images, des vidéos, et des programmes informatiques. L'HTML offre également la possibilité de créer des documents interopérables avec des équipements très variés et conformément aux exigences de l’accessibilité du web.<br>
+<br>
+Il est souvent utilisé conjointement avec le langage de programmation JavaScript et des feuilles de style en cascade (CSS). HTML est inspiré du Standard Generalized Markup Language (SGML). Il s'agit d'un format ouvert. </p>
+<hr>
+<h4 id="C2">Dénominations</h4>
+<p> L’anglais « Hypertext Markup Language » se traduit littéralement en « langage de balisage d’hypertexte ». On utilise généralement le sigle « HTML », parfois même en répétant le mot « langage » comme dans « langage HTML ». Hypertext est parfois écrit HyperText pour marquer le T du sigle HTML. <br>
+<br>
+Le public non averti parle parfois de HTM au lieu de HTML, HTM étant l’extension de nom de fichier tronquée à trois lettres, une limitation que l’on trouve sur d’anciens systèmes d’exploitation de Microsoft. </p>
+<hr>
+ 
+<h4 id="C3">Évolution du langage</h4>
+<p> Durant la première moitié des années 1990, avant l’apparition des technologies Web comme le langage JavaScript (JS), les feuilles de style en cascade (CSS) et le Document Object Model (DOM), l’évolution de HTML a dicté l’évolution du World Wide Web. Depuis la création de l'HTML4 en 1997, l’évolution de HTML a fortement ralenti ; dix ans plus tard, HTML4 reste utilisé dans les pages web. En 2008, la spécification du HTML5 est à l’étude et devient d'usage courant dans la seconde moitié des années 2010. </p>
+<hr>
+
+
+
+<h4 id="C4"> 1989-1992 : Origine </h4>
+<p> TML est une des trois inventions à la base du World Wide Web, avec le Hypertext Transfer Protocol (HTTP) et les adresses web (URL). HTML a été inventé pour permettre d'écrire des documents hypertextuels liant les différentes ressources d’Internet avec des hyperliens. Aujourd’hui, ces documents sont appelés « page web ». En août 1991, lorsque Tim Berners-Lee annonce publiquement le web sur Usenet, il ne cite que le langage Standard Generalized Markup Language (SGML), mais donne l’URL d’un document de suffixe .html. <br>
+<br>
+Dans son livre Weaving the web, Tim Berners-Lee décrit la décision de baser HTML sur comme étant aussi « diplomatique » que technique : techniquement, il trouvait trop complexe, mais il voulait attirer la communauté hypertexte qui considérait que était le langage le plus prometteur pour standardiser le format des documents hypertexte. En outre, était déjà utilisé par son employeur, l’Organisation européenne pour la recherche nucléaire (CERN). ; <br>
+<br>
+Les premiers élémentd du langage HTML comprennent: <br>
+<ul>
+  <li>Le titre du documents</li>
+  <li>Les hyperliens</li>
+  <li>La structure du texte en titres, sous-titres ou en texte brut</li>
+  <li>Un mécanisme rudimentaire de recherche par index</li>
+</ul>
+</p>
+<hr>
+
+<h4 id="C5"> 1993 : Apports de NCSA Mosaic </h4>
+<p> L’état de HTML correspond alors à ce que l’on pourrait appeler HTML 1.0. Il n’existe cependant aucune spécification portant ce nom, notamment parce que le langage était alors en pleine évolution. Un effort de normalisation était cependant en cours. À partir de fin 1993, le terme HTML+ est utilisé pour désigner la version future de HTML. Malgré l’effort de normalisation ainsi initié, et jusqu’à la fin des années 1990, HTML est principalement défini par les implémentations des navigateurs web.  <br>
+<br>
+Avec le navigateur NCSA Mosaic, HTML connaît deux inventions majeures : <br>
+<ul>
+  <li>d’abord l’invention de l’élément IMG permet d’intégrer des images (dans un premier temps, uniquement aux formats GIF et XBM) aux pages web (Mosaic 0.10) ;</li>
+  <li>ensuite l’invention des formulaires (Mosaic 2.0pre5) rend le web interactif en permettant aux visiteurs de saisir des données dans les pages et de les envoyer au serveur web. Cette invention permet notamment de passer des commandes, et donc d’utiliser le web pour faire du commerce électronique.</li>
+</ul>
+</p>
+<hr>
+
+<h4 id="C6"> 1994 : Apports de Netscape Navigator </h4>
+<p> Avec l’apparition de Netscape Navigator 0.9 le 13 octobre 1994, le support de nombreux éléments de présentation est ajouté : attributs de texte, clignotement, centrage, etc.  <br>
+<br>
+
+Le développement de HTML prend alors deux voies divergentes : <br>
+<ul>
+  <li>d’une part, les développeurs de navigateurs s’attachent à maximiser l’impact visuel des pages web en réponse aux demandes des utilisateurs;</li>
+  <li>d’autre part, les concepteurs du web proposent d’étendre les capacités de description sémantique (logos, notes de bas de page, etc.) et les domaines d’applications (formules mathématiques, tables) de HTML.</li>
+</ul>
+<br>
+
+Les concepteurs suivent les principes de SGML consistant à laisser la présentation à un langage de style. En l’occurrence, les feuilles de style en cascade (CSS) sont prévues pour HTML. Seul le support des tables est rapidement intégré aux navigateurs, notamment parce qu’il permet une très nette amélioration de la présentation. <br>
+<br>
+
+Outre la multiplication des éléments de présentation, les logiciels d’alors produisant et consommant du HTML conçoivent souvent les documents comme une suite de commandes de formatage plutôt que comme un marquage représentant la structure en arbre aujourd’hui appelée Document Object Model (DOM). Le manque de structure du HTML alors mis en œuvre est parfois dénoncé comme étant de la « soupe de balises », en anglais : tag soup. <br>
+<br>
+</p>
+<hr>
+
+<h4 id="C7">1995-1996 : HTML 2.0</h4>
+<p> En mars 1995, le World Wide Web Consortium (W3C) nouvellement fondé propose le résultat de ses recherches sur HTML+ : le brouillon HTML 3.0. Il comprend notamment le support des tables, des figures et des expressions mathématiques. Ce brouillon expire le 28 septembre 1995 sans donner de suites directes. Fin 1995, le RFC 1866 décrivant HTML 2.0 est finalisé. Le principal éditeur est Dan Connolly. Ce document décrit HTML tel qu’il existait avant juin 1994, donc sans les nombreuses additions de Netscape Navigator. <br>
+<br>
+</p>
+<hr>
+
+<h4 id="C8"> 1997 : HTML 3.2 et 4.0 </h4>
+<p> Le 14 janvier 1997, le W3C publie la spécification HTML 3.2. Elle décrit la pratique courante observée début 1996, donc avec une partie des additions de Netscape Navigator et d’Internet Explorer. Ses plus importantes nouveautés sont la standardisation des tables et de nombreux éléments de présentation. HTML 3.2 précède de peu HTML 4.0 et contient des éléments en prévision du support des styles et des scripts.  <br>
+<br>
+
+Le 18 décembre 1997, le W3C publie la spécification HTML 4.0 qui standardise de nombreuses extensions supportant les styles et les scripts, les cadres (frames) et les objets (inclusion généralisée de contenu). HTML 4.0 apporte également différentes améliorations pour l’accessibilité des contenus11 dont principalement la possibilité d’une séparation plus explicite entre structure et présentation du document, ou le support d’informations supplémentaires sur certains contenus complexes tels que les formulaires, les tableaux ou les sigles. HTML 4.0 introduit trois variantes du format, destinées à favoriser l’évolution vers un balisage plus signifiant, tout en tenant compte des limites temporaires des outils de production :  <br>
+<ul>
+  <li>la variante stricte (strict) exclut des éléments et attributs dits « de présentation », destinés à être remplacés par les styles CSS, ainsi que les éléments applet et frame qui sont remplacés par l’élément object conçu pour être plus apte à l’interopérabilité et à l’accessibilité ;</li>
+  <li>a variante transitoire (transitional) étend la variante stricte en reprenant les éléments et attributs dépréciés de HTML 3.2, dont les éléments de présentation sont couramment utilisés par les éditeurs HTML de l’époque ;</li>
+  <li>la variante frameset normalise la technique des jeux de cadres composant une ressource unique à partir de plusieurs pages web assemblées par le navigateur.</li>
+</ul>
+<br>
+
+Ces variantes perdurent par la suite sans modifications notables en HTML 4.01 et dans le format de transition XHTML 1.0 issu de HTML. La dernière spécification de HTML est la version 4.01 datant du 24 décembre 1999. Elle n’apporte que des corrections mineures à la version 4.0.  <br>
+<br>
+</p>
+<hr>
+
+</h4> <h4 id="C9">2000-2006 : XHTML </h4>
+<p> Le développement de HTML en tant qu’application du Standard Generalized Markup Language (SGML) est officiellement abandonné au profit de XHTML, application de Extensible Markup Language (XML). <br>
+<br>
+
+Cependant, en 2004, des éditeurs de navigateurs web créent le web Hypertext Application Technology Working Group (WHATWG) dans le but, notamment, de relancer le développement du format HTML et de répondre aux nouveaux besoins sur une base technologique jugée plus aisément implémentable que celle du XHTML 2.0 en cours de conception. <br>
+<br>
+
+Ceci s’inscrit dans le contexte d’une contestation plus générale du mode de fonctionnement du W3C, réputé trop fermé par une partie des développeurs et designers web. <br>
+<br>
+</p>
+<hr>
+
+</h4> <h4 id="C10">De 2007 à nos jours : HTML 5 et abandon du XHTML 2</h4>
+<p> En mars 2007, tirant la conséquence des réticences d’une partie de l’industrie et des concepteurs de contenus web face à XHTML 2.0, le W3C relance le développement de HTML et crée un nouveau groupe de travail encadré par Chris Wilson (Microsoft) et initialement Dan Connolly (W3C),puis Michael Smith (W3C). <br>
+<br>
+
+Il s’agit notamment : <br>
+<ul>
+  <li>de faire évoluer HTML pour décrire la sémantique des documents mais aussi les applications en ligne ;</li>
+  <li>de parvenir à un langage extensible via XML tout en maintenant une version non XML compatible avec les analyseurs syntaxiques (parsers) HTML des navigateurs  actuels ;</li>
+  <li> et d’enrichir les interfaces utilisateurs avec des contrôles spécifiques : barres de progrès, menus, champs associés à des types de données spécifiques.</li>
+</ul>
+<br>
+</p>
+<p>Les travaux du WHATWG ont été formellement adoptés en mai 2007 comme point de départ d’une nouvelle spécification HTML5. Ce document a été publié sous forme de Working Draft le 22 janvier 2008. Parmi les principes de conception évoqués par le groupe de travail figurent en particulier :  <br>
+<ul>
+  <li>da compatibilité des futures implémentations HTML avec le contenu web existant, et la possibilité pour d’anciens agents utilisateurs d’exploiter les futurs contenus HTML 5 ;</li>
+  <li> une approche pragmatique, préférant les évolutions aux modifications radicales, et adoptant les technologies ou pratiques déjà largement partagées par les auteurs de contenus actuels ; </li>
+  <li> une approche pragmatique, préférant les évolutions aux modifications radicales, et adoptant les technologies ou pratiques déjà largement partagées par les auteurs de contenus actuels ; </li>
+  <li> le compromis entre la richesse sémantique du langage et l’utilité pratique des solutions disponibles pour remplir l’objectif majeur d’indépendance envers le média de restitution. </li>
+</ul>
+<br>
+</p>
+<p>Une Accessibility Task Force est créée par le W3C en novembre 2009 afin de résoudre les problèmes de compatibilité du nouveau format avec les normes d'accessibilité, liés notamment à l'implémentation d'ARIA, aux alternatives textuelles et aux nouveaux éléments canvas et video20. <br>
+<br>
+Le développement de XHTML 2.0 est initialement poursuivi en parallèle, en réponse aux besoins d’autres secteurs du web, tels que les périphériques mobiles, les applications d’entreprise et les applications serveurs. Puis, en juillet 2009, le W3C décide la non-reconduction du XHTML 2 Working Group à la fin 2009. <br>
+<br>
+Avec l'abandon du XHTML 2, la version XHTML 1.1 reste donc la version normalisée. Le HTML5 sera compatible avec le XHTML et le XML, et autorisera donc des documents XHTML523. Cependant, il est probable que le W3C s'oriente vers un abandon pur et simple du XHTML 1.1, car l'implantation du XML dans le HTML5 rend inutile la définition de document de type XHTML y.y (où y.y sont les numéros de version). <br>
+<br> 
+</p>
+<hr>
+<h4 id="C11">Avenir du HTML</h4>
+<p>En , des divergences de points de vue entre Ian Hickson (ingénieur chez Google), qui écrit la spécification HTML5, et les membres du groupe de travail du W3C conduisent le WHATWG à créer HTML Living Standard (littéralement : standard vivant du HTML), une spécification de HTML prévue pour être en constante évolution, afin de coller avec les développements rapides de nouvelles fonctionnalités par les développeurs de navigateurs (par opposition à des versions numérotées, donc « fixes »).  <br>
+<br>
+Le HTML Living Standard a pour but d'inclure le HTML5, et de le développer en permanence. En particulier, dans la version du , le document de référence explique que le HTML5 du W3C, publié le , est basé sur une version du HTML Living Standard, mais que le HTML Living Standard ne s'arrête pas à cette version, et continue à évoluer. Il développe en particulier les différences entre la version W3C (le HTML5) et la version HTML Living Standard (par exemple, les nouveaux bugs ne sont pas pris en compte dans le HTML5, des différences syntaxiques sont répertoriées, et de nouvelles balises créées par le HTML Living Standard ne sont pas incluses dans le HTML5).<br>
+<br>
+</p>
+<hr>
+
+<h4 id="C12">Syntaxe du HTML</h4>
+<p>Jusqu’à sa version 4.01 comprise, HTML est formellement décrit comme une application du SGML. Cependant, les spécifications successives admettent, par différents biais, que les agents utilisateurs ne sont pas, en pratique, des analyseurs SGML conformes. Les navigateurs Web n’ont jamais été capables de déchiffrer l’ensemble des variations de syntaxe permises par SGML ; en revanche ils sont généralement capables de rattraper automatiquement de nombreuses erreurs de syntaxe, suivant la première partie de la « loi de Postel » : « Soyez libéral dans ce que vous acceptez, et conservateur dans ce que vous envoyez » ( 791). De fait, les développeurs de pages Web et de navigateurs Web ont toujours pris beaucoup de liberté avec les règles syntaxiques de SGML. Enfin, la document type definition (DTD) de HTML, soit la description technique formelle de HTML, n’a été écrite par Dan Connolly que quelques années après l’introduction de HTML.  <br>
+<br>
+Malgré les libertés prises avec la norme, la terminologie propre à SGML est utilisée : document, élément, attribut, valeur, balise, entité, validité, application,  Grâce à la DTD, il est possible de vérifier automatiquement la validité d’un document HTML à l’aide d’un parseur SGML. <br>
+<br>
+L’origine, HTML a été conçu pour baliser (ou marquer) simplement le texte, notamment pour y ajouter des hyperliens. On utilisait un minimum de balises.<br>
+<br>
+Un document HTML valide est un document qui respecte la syntaxe SGML, n’utilise que des éléments et attributs standardisés, et respecte l’imbrication des éléments décrite par le standard. Il ne manque qu’une déclaration de type de document à l’exemple précédent pour qu’il soit un document HTML 2.0 valide.<br>
+<br> 
+Un document valide n’est cependant pas suffisant pour être conforme à la spécification HTML visée. En effet, outre l’exigence de validité, un document conforme est soumis à d’autres contraintes qui ne sont pas exprimées par la définition de type de document (DTD), mais qui le sont par la spécification elle-même. C’est notamment le cas du type de contenu de certains attributs, comme celui de l’attribut datetime : pour être conforme à HTML 4.01, celui-ci doit être lui-même conforme à un sous-ensemble de la norme ISO 8601. Un parseur strictement SGML tel que le validateur HTML du W3C ne peut donc pas garantir la conformité d’un document HTML. <br>
+<br>
+</p>
+<hr>
+<h4 id="C13">Structure des documents HTML</h4>
+<p>Dans les premières années, les documents HTML étaient souvent considérés comme des structures plates, et les balises comme des commandes de style. Ainsi la balise .< p> était considérée comme un saut de ligne, et la balise < /p> était ignorée. Ou encore lorsque JavaScript 1.0 est apparu, il ne donnait accès qu’aux liens et formulaires du document à travers les tables document.forms et document.links. <br>
+<br>
+Avec l’introduction des Cascading Style Sheets et du Document Object Model, il a fallu considérer que les documents HTML ont une véritable structure en arbre, avec un élément racine contenant tous les autres éléments. Les balises ouvrantes et fermantes de ces éléments restent d’ailleurs optionnelles. Cependant, aujourd’hui, on a tendance à baliser chaque élément et à indiquer la DTD. À l'exception de l'élément à la racine, chaque élément a exactement un élément parent direct ; cet « arbre du document » est notamment utilisé par la structure de formatage qui en est dérivée pour l’application des feuilles de style en cascade où chaque élément peut avoir un fond, un bord et une marge propres. <br>
+<br>
+</p>
+<hr>
+
+<h4 id="C14"> Eléments de HTML </h4>
+<p> Article détaillé : <a href="https://fr.wikipedia.org/wiki/%C3%89l%C3%A9ment_HTML">Eléments HTML</a> <br>
+<br>
+La version 4 de HTML décrit 91 éléments. En suivant la spécification de HTML 4, les fonctionnalités implémentées par HTML peuvent être réparties ainsi : <br>
+<ul>
+  <li>Structure générale d’un document HTML: <br>
+  Au plus haut niveau, un document HTML est séparé entre un en-tête et un corps. L’en-tête contient les informations sur le document, notamment son titre et éventuellement des métadonnées. Le corps contient ce qui est affiché. </li>
+  <br>
+  <li> Informations sur la langue : <br>
+Il est possible d’indiquer la langue de n’importe quelle partie du document et de gérer le mélange de texte s’écrivant de gauche à droite avec du texte de droite à gauche.
+  </li>
+<br>
+  <li>Marquage sémantique : <br> 
+HTML permet de différencier des contenus spécifiques tels que les citations d’œuvres externes, les extraits de code informatique, les passages en emphase et les abréviations. Certains de ces éléments, conçus initialement pour permettre le support de documentations techniques, sont très rarement employés (différenciation entre les éléments de variable et d’exemple de valeur dans un code informatique, par exemple, ou encore instance d’un terme défini dans le contexte).</li>
+  <li> Listes : <br>
+HTML différencie des listes non ordonnées et des listes ordonnées, selon que l’ordre formel du contenu dans le code est en soi ou non une information. Des listes de définition existent également, mais sans que leur champ d’application ne soit exactement déterminé.</li>
+<br>
+  <li> Tables : <br>
+Cette fonctionnalité sert formellement à la présentation de données tabulaires, mais a été surtout exploitée pour ses capacités de mise en page avant que les feuilles de style en cascade (CSS) atteignent un degré de maturité suffisant.</li>
+<br>
+  <li> Hyperliens : <br> 
+La fonctionnalité première de HTML.</li>
+  <li>Inclusion d’images, d’applets et d’objets divers : <br>
+À l’origine HTML permettait seulement de donner des hyperliens sur les médias externes. L’invention d’éléments spécialisés pour le multimédia a permis l’inclusion automatique d’image, de musique, de vidéo,  dans les pages web. </li>
+<br>
+  <li>Éléments de regroupement :<br>
+Ne conférant pas de signification au contenu qu’ils balisent, ces éléments génériques permettent d’appliquer des styles de présentation, de réaliser des traitements via des scripts ou tout autre opération nécessitant d’isoler une partie du contenu. </li>
+<br>
+  <li>Style de la présentation : <br>
+Chaque élément, voire tout le document, peut se voir appliquer des styles. Les styles sont définis dans le document ou proviennent de feuilles de style en cascade (CSS) externes. </li>
+<br>
+  <li> Marquage de présentation du texte : <br>
+Développé avant la généralisation de CSS pour fournir rapidement des fonctionnalités aux graphistes. D’usage désormais officiellement déconseillé pour la plus grande partie. </li>
+<br>
+  <li> Cadres : <br>
+Aussi connu sous le nom de frames, une fonctionnalité souvent décriée qui permet d’afficher plusieurs documents HTML dans une même fenêtre. </li>
+<br>
+  <li> Formulaire pour l’insertion interactive de données: <br>
+Les éléments de formulaire permettent aux visiteurs d'entrer du texte et des fichiers dans les pages Web. </li>
+<br>
+  <li> Scripts : <br>
+Permet d’associer des morceaux de programmes aux actions des utilisateurs sur le document. Les langages utilisés sont généralement JavaScript et VBScript. </li>
+</ul>
+<br>
+<hr>
+
+
+<h4 id="C15"> Attributs de HTML </h4>
+<p> Les attributs permettent de préciser les propriétés des éléments HTML. Il y a 188 attributs dans la version 4 de HTML. <br>
+<br>
+Certains attributs s’appliquent à presque tous les éléments. 	Il est souvent utilisé conjointement avec le langage de programmation JavaScript et des feuilles de style en cascade (CSS). HTML est inspiré du Standard Generalized Markup Language (SGML). Il s'agit d'un format ouvert :	
+<ul>
+  <li> les attributs génériques id (identificateur unique) et class (identificateur répétable) destinés à permettre l’application de traitements externes, tels que l’application de styles de présentation ou de manipulation de l’arbre du document via un langage de script. Il s’y ajoute l’attribut style permettant de définir le style de présentation de l’élément (généralement en CSS), et l’attribut title apportant une information complémentaire de nature le plus souvent libre (L’exception majeure est l’utilisation du title pour déterminer le style permanent et les éventuels styles alternatifs appliqués à un document via des éléments link) ; </li>
+  <li> les attributs d’internationalisation dir et lang spécifiant la direction d’écriture et la langue du contenu ; </li>
+  <li> Les gestionnaires d’évènements onclick, ondblclick, onkeydown, onkeypress, onkeyup, onmousedown, onmousemove, onmouseout, onmouseover, onmouseup, qui capturent les évènements générés dans l’élément pour appeler un script.</li>
+</ul>
+D’autres attributs sont propres à un élément unique, ou des éléments similaires. Par exemple : <br>
+<ul>
+  <li> les éléments qui permettent d’inclure dans le document des ressources graphiques sont dotés d’attributs de hauteur et de largeur, afin que le navigateur puisse anticiper la taille de la ressource à afficher avant que celle-ci n’ait été téléchargée : img, object, iframe ;  </li>
+  <li> des éléments spécifiques sont dotés d’un attribut assumant une fonction unique, tel que l’élément label des étiquettes des contrôles de formulaire et son attribut for désignant le contrôle concerné : c’est, en HTML, et avec les attributs usemap et ismap des images, l’une des très rares associations explicites et formalisées entre des éléments, indépendamment de leur ordre linéaire dans le code source. </li>
+</ul>
+La plupart des attributs sont facultatifs. Quelques éléments ont cependant des attributs obligatoires : <br>
+<ul>
+  <li>de par leur nature : l’élément img est obligatoirement doté d’un attribut src spécifiant l’URI de la ressource graphique qu’il représente. Il en est de même de 	tous les éléments dits « vides » et « remplacés » qui, au prix d’une entorse aux règles , n’ont pas de contenu propre. C’est également le cas d’éléments non 	vides pour des raisons fonctionnelles, comme l’élément form dont l’attribut action indique la cible serveur qui traitera les données après soumission ; </li>
+  <li> pour des raisons liées à l’accessibilité du contenu : les images sont ainsi dotées d’un attribut obligatoire alt permettant d’indiquer un contenu textuel brut 	destiné à remplacer la ressource graphique dans les contextes de consultation où elle ne peut pas être restituée ou perçue.</li>
+</ul>
+Le type de contenu des attributs HTML échappe pour partie au champ d’application de cette norme, et sa validation relève de normes tierces telles que les URI, les types de contenu ou les codes de langages. <br>
+<br>
+Certains attributs sont enfin de type booléen. Ce sont les seuls attributs dont la syntaxe peut être validement implicite en HTML : l’attribut selected d’un contrôle de formulaire peut ainsi être raccourci sous la forme selected remplaçant la forme complète selected="selected". Cette forme particulière est un des points différenciant HTML de la syntaxe des documents « bien formés » au sens XML. <br>
+<br>
+</p>
+<br>
+<hr>
+
+<h4 id="C16">Jeux de caractères</h4>
+<p>ELes pages Web peuvent être rédigées dans toutes sortes de langues et de très nombreux caractères peuvent être utilisés, ce qui requiert soit un jeu de caractères par type d’écriture, soit un jeu de caractères universel. Lors de l’apparition de HTML, le jeu de caractères universel Unicode n’était pas encore inventé, et de nombreux jeux de caractères se côtoyaient, notamment ISO-8859-1 pour l’alphabet latin et ouest-européen, Shift-JIS pour le japonais, KOI8-R pour le cyrillique. Aujourd’hui, le codage UTF-8 de Unicode est le plus répandu.  <br>
+<br>
+Le protocole de communication HTTP transmet le nom du jeu de caractères. L’en-tête HTML peut comporter le rappel de ce jeu de caractères, qui devrait être identique, sauf erreur de réglage. Enfin, à la suite d'un mauvais réglage, le jeu de caractères réellement utilisé peut encore différer du jeu annoncé. Ces mauvais réglages causent généralement des erreurs d’affichage du texte, notamment pour les caractères non couverts par la norme ASCII. <br>
+<br>
+</p>
+<hr>
+
+<h4 id="C17"> techniques d'échapements </h4>
+<p> Article détaillé : <a href="https://fr.wikipedia.org/wiki/Liste_des_entit%C3%A9s_de_caract%C3%A8re_de_XML_et_HTML">Liste des entités de caractère de XML et HTML</a> <br>
+<p>Avant la généralisation d'Unicode, des entités ont été définies pour représenter certains caractères non ASCII. Cela a commencé avec les caractères d'ISO 8859-1 dans la norme HTML 2.0. Pour les diacritiques, ces entités suivent un principe simple : la lettre est suivie de l'abréviation de la diacritique associée.   <br>
+<br>
+
+<table style="width:100%">
+  <tr>
+   <th> caractère </th>
+   <th> Référence d'entité </th>
+   <th> remarque </th>
+  </tr>
+  <tr>
+   <th> Á </th>
+   <th> & Aacute ; </th>
+   <th> acute pour l'accent aigu 
+ </th>
+  </tr> 
+  <tr>
+   <th> Â </th>
+   <th> & Acirc ; </th>
+  <th> circ pour l'accent circonflexe </th>
+  </tr> 
+  <tr>
+   <th> À </th>
+   <th> & Agrave ; </th>
+   <th> grave pour l'accent grave </th>
+  </tr>
+  <tr>
+   <th> Å </th>
+   <th> & Aring ; </th>
+   <th> ring pour le rond en chef </th>
+  </tr> 
+  <tr>
+   <th> Ã </th>
+   <th> & Atilde ; </th>
+   <th> tilde pour le tilde </th>
+  </tr>  
+  <tr>
+   <th> Ä </th>
+   <th> & Auml; </th>
+   <th> uml (Umlaute) pour le tréma </th>
+  </tr>  
+  <tr>
+   <th> Ç </th>
+   <th> & Ccedil; </th>
+   <th> cedil pour la cédille  </th>
+  </tr> 
+  <tr>
+   <th> Ø </th>
+   <th> & Oslash ; </th>
+   <th> slash pour la barre oblique  </th>
+  </tr>
+</table>
+<br>
+</p>
+<hr>
+
+<h4 id="C18"> Interopérabilité de HTML </h4>
+<p> Tel qu’il a été formalisé par le W3C, HTML est conçu pour optimiser l’interopérabilité des documents. Le HTML ne sert pas à décrire le rendu final des pages web. En particulier, contrairement à la publication assistée par ordinateur, HTML n’est pas conçu pour spécifier l’apparence visuelle des documents. HTML est plutôt conçu pour donner du sens aux différentes parties du texte : titre, liste, passage important, citation,  Le langage HTML a été développé avec l’intuition que les appareils de toutes sortes seraient utilisés pour consulter le web : les ordinateurs personnels avec des écrans de résolution et de profondeur de couleurs variables, les téléphones portables, les appareils de synthèse et de reconnaissance de la parole, les ordinateurs avec une bande passante faible comme élevée, et ainsi de suite.  <br>
+<br>
+Comme HTML ne s’attache pas au rendu final du document, un même document HTML peut être consulté à l’aide de matériels et logiciels très divers. Au niveau matériel, un document peut notamment être affiché sur un écran d'ordinateur en mode graphique ou un terminal informatique en mode texte, il peut être imprimé, ou il peut être prononcé par synthèse vocale. Au niveau logiciel, HTML ne fait pas non plus de supposition, et plusieurs types de logiciels lisent le HTML : navigateur web, robot d'indexation, scripts divers (en Perl, PHP) de traitement automatique.  <br>
+<br>
+Un haut degré d’interopérabilité permet de baisser les coûts des fournisseurs de contenus car une seule version de chaque document sert des besoins très variés. Pour l’utilisateur du web, l’interopérabilité permet l’existence de nombreux navigateurs concurrents, tous capables de consulter l’ensemble du web.  <br>
+<br>
+Chaque version de HTML a essayé de refléter le plus grand consensus entre les acteurs de l’industrie, de sorte que les investissements consentis par les fournisseurs de contenus ne soient pas gaspillés et que leurs documents ne deviennent en peu de temps illisibles. La séparation du fond et de la forme n’a pas toujours été respectée au cours du développement du langage, comme en témoigne par exemple le balisage de style de texte, qui permet d’indiquer notamment la police de caractères souhaitée pour l’affichage, sa taille, ou sa couleur. <br>
+<br>
+</p>
+<hr>
+
+<br>
+<table style="width:100%">
+  <tr>
+   <th> <button class="button"><a href="https://fr.wikipedia.org/wiki/Hypertext_Markup_Language">wikipédia HTML</a> </button> </th>
+   <th> <button class="button"><a href="https://www.w3schools.com/html/html_examples.asp">HTML</a></button> </th>
+   <th> <button class="button"><a href="https://www.w3schools.com/Css/css_examples.asp">CSS</a> </button> </th>
+   <th> <button class="button"><a href="https://www.rapidtables.com/web/color/RGB_Color.html">couleur RGB</a></button> </th>
+  </tr>
+  <tr>
+   <th> <button class="button"><a href="https://www.w3schools.com/cssref/css_colors.php">Couleur CSS</a> </button> </th>
+   <th> <button class="button"><a href="https://fr.wikipedia.org/wiki/Tim_Berners-Lee">Tim Berners-Lee</a> </button> </th>
+   <th> <button class="button"><a href="https://fr.wikipedia.org/wiki/Feuilles_de_style_en_cascade">wikipédia CSS</a> </button> </th>
+   <th> <button class="button"><a href="https://html.spec.whatwg.org/multipage/">site oficiel HTML</a> </button> </th>
+  </tr>
+</table>
+<br>
+<hr>
+<center>
+<table>
+  <tr>
+   <th> <button class="button"> <a href=" https://www.w3schools.com/Css/tryit.asp?filename=trycss_website_layout_footer ">mise en page stylé 1 </button> </th>
+   <th> <button class="button"> <a href="https://www.w3schools.com/Css/tryit.asp?filename=trycss_website_layout_blog ">mise ne page stylé 2 </button> </th>
+  </tr> 
+</table>
+</center>
+<br>
+<center>
+<button class="button"> <a href="#C20">haut de page</a> </button>
+</center>
+<br>
+<center>
+<p><button class="button" onclick="clickCounter()" type="button">Click !</button></p>
+<div class="two" id="result"></div>
+<p class="one"> Clique sur le boutton. Ferme ton votre navigateur (ou l'onglets), et réessaye, le conteur ne sera pas remis a zero.<br>
+!! Magique !!</p>
+</center>
+<hr>
+<img src="https://www.w3schools.com/html/programming.gif" alt="Computer man" style="width:48px;height:48px;">
+</body>
+</html> 
